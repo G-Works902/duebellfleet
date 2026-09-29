@@ -35,7 +35,7 @@
 
   <header>
     <h1><span class="brand">Duebell Fleet</span> &mdash; プライバシーポリシー / Privacy Policy</h1>
-    <div class="meta">最終更新日 / Last updated: 2026-09-26 ・ 発行者 / Publisher: <strong>G-Works</strong></div>
+    <div class="meta">最終更新日 / Last updated: 2026-09-30 ・ 発行者 / Publisher: <strong>G-Works</strong></div>
   </header>
 
   <!-- ================= 日本語 ================= -->
@@ -48,7 +48,7 @@
   <h3>1. 収集する情報</h3>
   <ul>
     <li>本アプリは利用者の個人情報を収集しません。</li>
-    <li>利用者が入力した次のデータは、利用者のデバイス内のデータベースファイル（既定は <code>%LOCALAPPDATA%\DuebellFleet\duebellfleet.db</code>。利用者が社内の共有フォルダなど別の場所を指定した場合はその場所）に保存されます。
+    <li>利用者が入力した次のデータは、利用者のデバイス内のデータベースファイル（既定は「ドキュメント」フォルダの <code>DuebellFleet\duebellfleet.db</code>。利用者が社内の共有フォルダなど別の場所を指定した場合はその場所）に保存されます。
       <ul>
         <li>車両の情報（車両名、ナンバー、車台番号、担当者、部署など）</li>
         <li>期限と更新の履歴、整備記録、走行距離、費用</li>
@@ -56,7 +56,7 @@
         <li>自動・手動のバックアップ（同じ場所の <code>backup</code> フォルダ）</li>
       </ul>
     </li>
-    <li>次回起動時に同じ状態で開く目的で、次の設定が <code>%LOCALAPPDATA%\DuebellFleet\duebellfleet.ini</code> に保存されます：表示言語、同意した免責事項の版、データベースの場所、一覧の列幅、ウィンドウの位置と大きさ。</li>
+    <li>次回起動時に同じ状態で開く目的で、次の設定が本アプリの設定ファイル（<code>duebellfleet.ini</code>。Microsoft Store 版ではアプリ専用の領域）に保存されます：表示言語、同意した免責事項の版、データベースの場所、一覧の列幅、ウィンドウの位置と大きさ。</li>
     <li>共有フォルダで使う場合、同時編集を防ぐためのロックファイルに、編集中の PC 名・Windows のユーザー名・時刻が書かれます。これは同じフォルダを使う利用者の画面に「編集中の人」として表示するためだけに使われます。</li>
     <li>これらのファイルが外部へ送信されることはなく、開発者がアクセスすることもできません。</li>
   </ul>
@@ -75,7 +75,7 @@
   <p>CSV・印刷用 HTML・カレンダー（.ics）への書き出しは、利用者が明示的に操作したときにのみ実行され、書き出し先は利用者が指定した場所（印刷用 HTML は一時フォルダ）です。本アプリが外部へ送信することはありません。</p>
 
   <h3>6. データの保存期間と削除</h3>
-  <p>データは、利用者が削除するまで保存されます。本アプリをアンインストールしても、業務データを失わないようデータベース・バックアップ・添付書類は残ります。完全に消去するには、<code>%LOCALAPPDATA%\DuebellFleet</code>（および利用者が指定した保存場所）を削除してください。</p>
+  <p>データは、利用者が削除するまで保存されます。本アプリをアンインストールしても、業務データを失わないようデータベース・バックアップ・添付書類（「ドキュメント」の <code>DuebellFleet</code> フォルダ）は残ります。設定ファイルはアンインストール時に削除されます。完全に消去するには、「ドキュメント」の <code>DuebellFleet</code> フォルダ（および利用者が指定した保存場所）を削除してください。</p>
 
   <h3>7. セキュリティ</h3>
   <p>データは利用者のデバイスまたは利用者が指定したフォルダにのみ保存されるため、その安全性は利用者のデバイス・ネットワークのセキュリティ対策に依存します。</p>
@@ -102,7 +102,7 @@
   <h3>1. Information we collect</h3>
   <ul>
     <li>The App does not collect any personal information.</li>
-    <li>The data you enter is stored in a database file on your device (by default <code>%LOCALAPPDATA%\DuebellFleet\duebellfleet.db</code>, or another location you choose, such as a shared folder on your company network):
+    <li>The data you enter is stored in a database file on your device (by default <code>DuebellFleet\duebellfleet.db</code> in your Documents folder, or another location you choose, such as a shared folder on your company network):
       <ul>
         <li>Vehicle information (name, plate, VIN, assignee, department and so on)</li>
         <li>Due dates and renewal history, maintenance records, odometer readings, costs</li>
@@ -110,7 +110,7 @@
         <li>Automatic and manual backups (a <code>backup</code> folder next to the database)</li>
       </ul>
     </li>
-    <li>To open the App the way you left it, the following settings are stored in <code>%LOCALAPPDATA%\DuebellFleet\duebellfleet.ini</code>: display language, the version of the disclaimer you agreed to, the database location, column widths and the window position and size.</li>
+    <li>To open the App the way you left it, the following settings are stored in the App's settings file (<code>duebellfleet.ini</code>; in the Microsoft Store version, in the App's own storage): display language, the version of the disclaimer you agreed to, the database location, column widths and the window position and size.</li>
     <li>When the database is in a shared folder, a lock file records the editing PC's name, the Windows user name and the time, to prevent simultaneous editing. It is used only to show other users of the same folder who is editing.</li>
     <li>These files never leave your device, and the developer cannot access them.</li>
   </ul>
@@ -129,7 +129,7 @@
   <p>Export to CSV, printable HTML and calendar files (.ics) runs only when you ask for it, and writes to the location you choose (printable HTML goes to the temporary folder). The App never transmits anything.</p>
 
   <h3>6. Retention and deletion</h3>
-  <p>Data is kept until you delete it. Uninstalling the App leaves the database, backups and attached documents in place so that business data is not lost. To remove everything, delete <code>%LOCALAPPDATA%\DuebellFleet</code> (and any other location you chose for the database).</p>
+  <p>Data is kept until you delete it. Uninstalling the App leaves the database, backups and attached documents (the <code>DuebellFleet</code> folder in Documents) in place so that business data is not lost; the settings file is removed with the App. To remove everything, delete the <code>DuebellFleet</code> folder in Documents (and any other location you chose for the database).</p>
 
   <h3>7. Security</h3>
   <p>Data is stored only on your device or in a folder you choose, so its security depends on the security measures of your device and network.</p>
